@@ -4,8 +4,6 @@ from decimal import *
 
 import time
 
-#Sets decimal to 25 digits of precision
-
 getcontext().prec = input("how many digits of pi? ")
 
 def factorial(n):
@@ -28,7 +26,6 @@ def chudnovskyBig(n): #http://en.wikipedia.org/wiki/Chudnovsky_algorithm
 
 i = input("how many iterations? ")
 starttime = time.time()
-print "\t\t\t Chudnovsky"
-
+print "\t Chudnovsky calculation of Pi"
 print "Iteration number ",i, " ", chudnovskyBig(i)
 print"total time of run: ",  (time.time() - starttime)
