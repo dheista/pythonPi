@@ -1,8 +1,11 @@
 #!/usr/bin/python
 
 from decimal import *
+from datetime import datetime
 
 import time
+current_time = now.strftime("%H:%M:%S")
+print("Start Time =", current_time)
 
 getcontext().prec = int(input("how many digits of pi? "))
 
